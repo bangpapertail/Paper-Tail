@@ -141,9 +141,9 @@ export default function PaperTailLandingPage() {
           <div className="grid md:grid-cols-3 gap-10 relative">
             <div className="hidden md:block absolute top-[56px] left-[29%] right-[29%] border-t-2 border-dashed border-[#FF6B6B]"></div>
             {[
-              ['1', '📸', 'Upload your pet's photo', 'Send us your favorite photo of your fur baby.'],
-              ['2', '🎨', 'Choose your art style & product', 'Pick from chibi, caricature, or cartoon and select your favorite stationery.'],
-              ['3', '📦', 'We create & ship your custom order!', 'Made with love and delivered right to your door.']
+              ['1', '📸', 'Upload your pet photo', 'Send us your favorite photo of your fur baby.'],
+              ['2', '🎨', 'Choose your art style and product', 'Pick from chibi, caricature, or cartoon and select your favorite stationery.'],
+              ['3', '📦', 'We create and ship your custom order!', 'Made with love and delivered right to your door.']
             ].map(([num, icon, title, desc]) => (
               <div key={num} className="relative bg-white rounded-xl h-[130px] p-5 flex items-center gap-4 border border-[#ECDCCE] card-shadow z-10">
                 <div className="absolute -top-3 -left-3 bg-[#FF6B6B] text-white w-9 h-9 rounded-full grid place-items-center font-black text-lg">{num}</div>
@@ -194,7 +194,7 @@ export default function PaperTailLandingPage() {
               {testimonials.map(([name, role, quote]) => (
                 <div key={name} className="bg-white rounded-xl p-7 border border-[#ECDCCE] card-shadow text-center">
                   <div className="text-[#F4C430] tracking-widest mb-3">★★★★★</div>
-                  <p className="text-[13px] leading-relaxed text-[#4A4A4A] mb-5">\"'{quote}'\"</p>
+                  <p className="text-[13px] leading-relaxed text-[#4A4A4A] mb-5">{quote}</p>
                   <div className="flex items-center justify-center gap-3 text-left">
                     <div className="w-12 h-12 rounded-full bg-[#FFD4CA] grid place-items-center text-2xl">👩</div>
                     <div>
@@ -218,7 +218,7 @@ export default function PaperTailLandingPage() {
           <div className="bg-white rounded-xl border border-[#ECDCCE] card-shadow p-6">
             <div className="text-5xl mb-2">🎁</div>
             <h3 className="brand-serif text-[24px] leading-tight mb-2">Get 15% Off<br/>Your First Order!</h3>
-            <p className="text-[12px] text-[#555] mb-5">Join our pack and be the first to know about new designs, offers & more.</p>
+            <p className="text-[12px] text-[#555] mb-5">Join our pack and be the first to know about new designs, offers and more.</p>
             <div className="flex gap-2">
               <input className="flex-1 border border-[#E5D8CA] rounded-md px-3 py-2 text-[12px]" placeholder="Enter your email" />
               <button className="bg-[#FF6B6B] text-white rounded-md px-5 text-[12px] font-bold">Join Now</button>
@@ -259,7 +259,7 @@ export default function PaperTailLandingPage() {
             <p className="text-[12px] text-[#555] max-w-[130px]">Stationery as unique as your pet.</p>
           </div>
           <FooterCol title="Shop" items={['All Products','Notebooks','Notepads','Cards','Stickers']} />
-          <FooterCol title="Information" items={['How It Works','Shipping','Returns & Exchanges','Care Instructions','FAQ']} />
+          <FooterCol title="Information" items={['How It Works','Shipping','Returns and Exchanges','Care Instructions','FAQ']} />
           <FooterCol title="Company" items={['About Us','Reviews','Contact Us','Privacy Policy','Terms of Service']} />
           <div>
             <h4 className="font-bold text-[13px] mb-2">Stay Connected</h4>
